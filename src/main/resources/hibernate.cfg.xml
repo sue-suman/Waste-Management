@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!--Connection-->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/waste_mgmt</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Shradha@123</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <!-- CRUD operation-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+
+        <!-- Mappings -->
+        <mapping class="beans.Entity.Waste" />
+        <mapping class="beans.Entity.WasteType" />
+        <mapping class="beans.Entity.WasteCollection" />
+        <mapping class="beans.Entity.Vehicle" />
+        <mapping class="beans.Entity.Driver" />
+    </session-factory>
+</hibernate-configuration>
