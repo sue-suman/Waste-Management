@@ -17,10 +17,10 @@
         <property name="show_sql">true</property>
 
         <!-- Mappings -->
-        <mapping class="beans.Entity.Waste" />
-        <mapping class="beans.Entity.WasteType" />
-        <mapping class="beans.Entity.WasteCollection" />
-        <mapping class="beans.Entity.Vehicle" />
-        <mapping class="beans.Entity.Driver" />
+        <mapping class="beans.Waste" />
+        <mapping class="beans.WasteType" />
+        <mapping class="beans.WasteCollection" />
+        <mapping class="beans.Vehicle" />
+        <mapping class="beans.Driver" />
     </session-factory>
 </hibernate-configuration>
